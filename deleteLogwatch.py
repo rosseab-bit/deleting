@@ -21,9 +21,9 @@ def deleteLog():
     # borra la mitad de los archivos mas viejos.
     # modificando podemos tomar porcentajes a borrar con fracciones.
     x = len(list_dir)/2
-    x_decimal, x_entero = math.modf(x)
+    x_dec, x_int = math.modf(x)
     print (x_entero)
-    while (i<x_entero):
+    while (i<x_int):
         path = "%s/%s" % (directory_root, list_dir[i])
         #print (path)
         if os.path.isdir(path):
