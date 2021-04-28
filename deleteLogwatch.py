@@ -3,7 +3,7 @@ import sys
 import json
 import time
 import math
-
+# este cambio esta en la rama de develop
 def deleteLog():
     directory_root = "/path/de/archivos" # directorio donde se encuentran los archivos o directorios a borrar.
     dir_log = "/path/dellDir.tmp" # archivo donde se guardar la salida de archivos a borrar.
