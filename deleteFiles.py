@@ -4,7 +4,7 @@ import json
 import time
 import math
 
-def deleteLog():
+def deleteFiles():
     directory_root = "/path/de/archivos" # directorio donde se encuentran los archivos o directorios a borrar.
     dir_log = "/path/dellDir.tmp" # archivo donde se guardar la salida de archivos a borrar.
     cmd = "ls -lhtr %s | awk '{print $9}' > %s" % (directory_root, dir_log)
@@ -48,4 +48,4 @@ def deleteLog():
             time.sleep(2)
         i+=1
 
-deleteLog()
+deleteFiles()
